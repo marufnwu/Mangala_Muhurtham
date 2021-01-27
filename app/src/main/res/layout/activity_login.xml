@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:background="@drawable/couple_hand"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:background="#9E090909"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/mangala_muhurtham"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"/>
+            <TextView
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/_8sdp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/opensans_extrabold"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold"
+                android:text="@string/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/edt_email"
+                android:textColorHint="@color/white"
+                android:textColor="@android:color/white"
+                android:drawablePadding="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:hint="@string/email"
+                android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+                android:background="@drawable/edt_bg_main"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/edt_password"
+                android:textColorHint="@color/white"
+                android:textColor="@android:color/white"
+                android:drawablePadding="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:hint="@string/password"
+                android:drawableStart="@drawable/ic_outline_lock_24"
+                android:background="@drawable/edt_bg_main"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:fontFamily="@font/opensans_extrabold"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:text="@string/login"
+                android:background="@drawable/btn_bg_main"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/opensans_regular"
+                    android:theme="@style/MyCheckbox"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Remember Me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/txt_forgotPass"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="end"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="@string/forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <View
+                android:background="@color/white"
+                android:layout_margin="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_28sdp"
+                    android:fontFamily="@font/opensans_extrabold"
+                    android:text="New Here?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/txt_newAcc"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="@dimen/_18sdp"
+                    android:text="Create an account from here"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

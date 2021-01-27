@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Fragments.ProfileFragment">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/img_cover"
+               android:scaleType="centerCrop"
+               android:src="@drawable/hrittik"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_150sdp"/>
+
+           <ImageView
+               android:scaleType="centerCrop"
+               android:src="@color/black_transparent"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_150sdp"/>
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/img_profile"
+               app:civ_border_color="@color/white"
+               app:civ_border_width="@dimen/_8sdp"
+               android:layout_marginTop="@dimen/_80sdp"
+               android:src="@drawable/hrittik"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_160sdp"/>
+       </FrameLayout>
+
+       <TextView
+           android:id="@+id/txt_name"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:fontFamily="@font/opensans_extrabold"
+           android:textSize="@dimen/_20sdp"
+           android:text="Maruf Ahmed"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <LinearLayout
+           android:layout_marginTop="@dimen/_15sdp"
+           android:gravity="center"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:textSize="@dimen/_30sdp"
+               android:fontFamily="@font/opensans_extrabold"
+               android:text="0"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:textSize="@dimen/_16sdp"
+               android:fontFamily="@font/opensans_bold"
+               android:text="Followers"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_marginTop="@dimen/_15sdp"
+           android:background="@color/red"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_50sdp">
+               <TextView
+                   android:textColor="@color/white"
+                   android:fontFamily="@font/opensans_bold"
+                   android:textSize="@dimen/_18sdp"
+                   android:text="Package Information"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_gravity="center"
+           android:weightSum="2"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:fontFamily="@font/opensans_bold"
+               android:padding="@dimen/_8sdp"
+               android:gravity="center"
+               android:textSize="@dimen/_16sdp"
+               android:text="Free Member"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:fontFamily="@font/opensans_bold"
+               android:padding="@dimen/_8sdp"
+               android:textSize="@dimen/_16sdp"
+               android:gravity="center"
+               android:text="0.00"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_gravity="center"
+           android:weightSum="2"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="vertical"
+               android:fontFamily="@font/opensans_bold"
+               android:padding="@dimen/_8sdp"
+               android:gravity="center"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:fontFamily="@font/opensans_bold"
+                   android:textSize="@dimen/_16sdp"
+                   android:gravity="center"
+                   android:text="None"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:fontFamily="@font/opensans_regular"
+                   android:textSize="@dimen/_14sdp"
+                   android:gravity="center"
+                   android:text="Payment Method"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:fontFamily="@font/opensans_bold"
+               android:padding="@dimen/_8sdp"
+               android:gravity="center"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:fontFamily="@font/opensans_bold"
+                   android:textSize="@dimen/_16sdp"
+                   android:gravity="center"
+                   android:text="0"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:fontFamily="@font/opensans_regular"
+                   android:textSize="@dimen/_14sdp"
+                   android:gravity="center"
+                   android:text="Remaining Interest"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+       </LinearLayout>
+
+       <View
+           android:layout_margin="@dimen/_8sdp"
+           android:background="@color/ash"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_1sdp"/>
+
+
+       <LinearLayout
+           android:layout_gravity="center"
+           android:weightSum="2"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="vertical"
+               android:fontFamily="@font/opensans_bold"
+               android:padding="@dimen/_8sdp"
+               android:gravity="center"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:fontFamily="@font/opensans_bold"
+                   android:textSize="@dimen/_16sdp"
+                   android:gravity="center"
+                   android:text="0"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:fontFamily="@font/opensans_regular"
+                   android:textSize="@dimen/_14sdp"
+                   android:gravity="center"
+                   android:text="Remaining"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:fontFamily="@font/opensans_bold"
+               android:padding="@dimen/_8sdp"
+               android:gravity="center"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:fontFamily="@font/opensans_bold"
+                   android:textSize="@dimen/_16sdp"
+                   android:gravity="center"
+                   android:text="0"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <TextView
+                   android:fontFamily="@font/opensans_regular"
+                   android:textSize="@dimen/_14sdp"
+                   android:gravity="center"
+                   android:text="Photo Galary"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+       </LinearLayout>
+   </LinearLayout>
+
+</ScrollView>

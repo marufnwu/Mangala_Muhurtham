@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:background="@drawable/couple_hand"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecoverActivity">
+
+    <LinearLayout
+        android:background="#9E090909"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/mangala_muhurtham"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"/>
+
+
+            <TextView
+                android:layout_margin="@dimen/_8sdp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensans_bold"
+                android:textSize="@dimen/_20sdp"
+                android:text="Recover Your Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/edt_email"
+                android:textColorHint="@color/white"
+                android:textColor="@android:color/white"
+                android:drawablePadding="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_16sdp"
+                android:hint="@string/email"
+                android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+                android:background="@drawable/edt_bg_main"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:fontFamily="@font/opensans_extrabold"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/white"
+                android:text="@string/submit"
+                android:background="@drawable/btn_bg_main"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:drawablePadding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+                android:layout_gravity="right"
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensans_extrabold"
+                android:textSize="@dimen/_16sdp"
+                android:text="@string/back_to_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <View
+                android:background="@color/white"
+                android:layout_margin="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_28sdp"
+                    android:fontFamily="@font/opensans_extrabold"
+                    android:text="New Here?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="@dimen/_18sdp"
+                    android:text="Create an account from here"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
